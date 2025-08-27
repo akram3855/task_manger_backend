@@ -1,7 +1,14 @@
-## Task Manager API Backend
+# Task Manager Backend
 This repository contains the backend service for a Task Manager application, built with Django and Django REST Framework (DRF). It provides a RESTful API to manage tasks, supporting full CRUD functionality along with advanced features like filtering, sorting, and pagination. The entire application is containerized with Docker for a streamlined development and deployment experience.
 ## DockerHub
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-task--manager-blue)](https://hub.docker.com/r/akramaliii/task-manager)
+
+## Technologies
+ ### Backend Framework: Django, Django REST Framework (DRF)
+
+### Database: PostgreSQL
+
+### Containerization: Docker, Docker Compose
 
 ## Setup and Run Instructions
 The easiest way to get the backend running is by using Docker Compose, which will automatically build the application image and spin up a PostgreSQL database container.
