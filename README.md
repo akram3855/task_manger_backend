@@ -49,9 +49,9 @@ Replace `[YOUR_API_KEY]` with the key you set in your .env file.
 ## 1. Create a Task (POST)
 To create a new task, send a POST request with the required fields in a JSON body.
 ```bash
-curl -X POST http://localhost:8000/api/tasks/ \
+curl -X POST http://localhost:8000/tasks/ \
 -H "Content-Type: application/json" \
--H "Authorization: Api-Key [YOUR_API_KEY]" \
+-H "Authorization: Api-Key 12345678" \
 -d '{
   "title": "Build a CI/CD pipeline",
   "description": "Automate the testing and deployment workflow.",
