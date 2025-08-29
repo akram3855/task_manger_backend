@@ -44,7 +44,7 @@ The backend API will now be live and accessible at http://localhost:8000.
 ## API Usage Examples
 The API is accessible at http://localhost:8000/tasks/. All endpoints require authentication via a custom API key provided in the Authorization header.
 
-Replace `[YOUR_API_KEY]` with the key you set in your .env file.
+## Replace `[YOUR_API_KEY]` with the key you set in your .env file.
 
 ## 1. Create a Task (POST)
 To create a new task, send a POST request with the required fields in a JSON body.
