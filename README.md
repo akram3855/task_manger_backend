@@ -75,11 +75,11 @@ curl -X GET "http://localhost:8000/api/tasks/?status=done&priority=low" \
 -H "Authorization: Api-Key [YOUR_API_KEY]"
 
 # Search for "docker" in titles and descriptions
-curl -X GET "http://localhost:8000/api/tasks/?search=docker" \
+curl -X GET "http://localhost:8000/tasks/?search=docker" \
 -H "Authorization: Api-Key [YOUR_API_KEY]"
 
 # Sort by due date in descending order
-curl -X GET "http://localhost:8000/api/tasks/?ordering=-due_date" \
+curl -X GET "http://localhost:8000/tasks/?ordering=-due_date" \
 -H "Authorization: Api-Key [YOUR_API_KEY]"
 ```
 
@@ -87,13 +87,13 @@ curl -X GET "http://localhost:8000/api/tasks/?ordering=-due_date" \
 Fetch the details of a specific task using its unique id.
 ```bash
 
-curl -X GET http://localhost:8000/api/tasks/[TASK_ID]/ \
+curl -X GET http://localhost:8000/tasks/[TASK_ID]/ \
 -H "Authorization: Api-Key [YOUR_API_KEY]"
 ```
 ## 4. Update a Task (PATCH)
 Update one or more fields of an existing task. Use PATCH for a partial update.
 ```bash
-curl -X PATCH http://localhost:8000/api/tasks/[TASK_ID]/ \
+curl -X PATCH http://localhost:8000/tasks/[TASK_ID]/ \
 -H "Content-Type: application/json" \
 -H "Authorization: Api-Key [YOUR_API_KEY]" \
 -d '{"status": "done"}'
@@ -101,7 +101,7 @@ curl -X PATCH http://localhost:8000/api/tasks/[TASK_ID]/ \
 ## 5. Delete a Task (DELETE)
 Permanently delete a task using its unique id.
 ```bash
-curl -X DELETE http://localhost:8000/api/tasks/[TASK_ID]/ \
+curl -X DELETE http://localhost:8000/tasks/[TASK_ID]/ \
 -H "Authorization: Api-Key [YOUR_API_KEY]"
 
 ```
